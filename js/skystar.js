@@ -2,21 +2,25 @@
 var words=[
     'ilovyou',
     'The forth monthsarry',
-    'Mahal kita',
-    'in ur gaze, i see my forever and ur laughter is the music of my heart',  
-    'loving u is my greatest adventure, ur embrace is my safe haven',  
-    'every moment with u is a treasure and u complete me in ways i never knew',  
-    'ur touch ignites a fire in my soul, our love is both fierce and tender',  
-    'u turn the ordinary into magic, each kiss is a promise of forever',  
-    'u inspire me to love deeper in ur arms, i find my home',  
-    'i want to journey through life with u, ur smile brightens my darkest days',  
-    'our bond transcends words and time, with u, every moment is bliss',  
-    'u are my sweetest dream come true, together, we create our own paradise',  
-    'ur love is the light that guides me, with u, my heart feels at peace',  
-    'u are the reason for my happiness, in ur eyes, i find my dreams',  
-    'u make my soul dance with joy, ur whispers are my favorite melody',  
-    'with every heartbeat, i love u more, u are my forever and always',  
-    'each day with u is a gift to cherish, ur love is my greatest treasure'  
+    'Mahal kita',   
+    'ur embrace is my safe haven',  
+    'ur touch ignites a fire in my soul',  
+    'our love is both fierce and tender',  
+    'each kiss is a promise of forever',  
+    'u inspire me to love deeper',  
+    'i want to journey through life with u',  
+    'ur smile brightens my darkest days',  
+    'our bond transcends words and time',  
+    'with u, every moment is bliss',  
+    'u are my sweetest dream come true',  
+    'together, we create our own paradise',  
+    'with u, my heart feels at peace',  
+    'ur the reason for my happiness',  
+    'in ur eyes, i find my dreams',  
+    'u make my soul dance with joy',   
+    'with every heartbeat, iloveumore',  
+    'ur my forever and always',  
+    'each day with u is a gift to cherish'
 ];
 function randomNum(min,max){
     var num = (Math.random()*(max-min+1)+min).toFixed(2);
@@ -32,7 +36,7 @@ function init(){
         word.classList.add('word');
         word.style.color = '#BAABDA';
         word.style.fontFamily = 'Courgette';
-        word.style.fontSize = '20px'
+        word.style.fontSize = '15px'
         word_box.classList.add('word-box');
         word_box.style.setProperty("--margin-top",randomNum(-40,20)+'vh');
         word_box.style.setProperty("--margin-left",randomNum(6,35)+'vw');
