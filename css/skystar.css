@@ -20,7 +20,7 @@ body {
     height: 100vh; /* Use viewport height */
     object-fit: cover; /* Maintain aspect ratio */
     position: fixed;
-    z-index: 1;
+    z-index:-1;
 }
 
 h1 {
