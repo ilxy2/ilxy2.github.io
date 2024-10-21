@@ -15,14 +15,31 @@ body {
     perspective: 1300px;
 }
 
-#videofilm {
-    width: 100vw; /* Use viewport width */
-    height: 100vh; /* Use viewport height */
-    object-fit: cover; /* Maintain aspect ratio */
-    position: fixed;
+/*#videofilm {
+    width: 100vw; 
+/* Use viewport width */
+    /*height: 100vh;
+/* Use viewport height */
+    /*object-fit: cover;
+/* Maintain aspect ratio */
+    /*position: fixed;
     z-index:-1;
+}*/
+.gif-container {
+    position: absolute; /* Change to absolute */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
 }
 
+#animated-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    z-index: 1; /* Keep gif above background */
+}
 h1 {
     font-size: 36px;
     color: #B1BCE6;
@@ -53,7 +70,7 @@ h1 {
 :root {
     --margin-top: 0;
     --margin-left: 0;
-    --animation-duration: 0s;
+    --animation-duration: 5s;
     --animation-delay: 0s;
 }
 
