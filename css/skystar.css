@@ -90,22 +90,3 @@ div {
 audio {
     display: none; /* Hide audio element */
 }
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 24px; /* Adjust font size for smaller screens */
-    }
-
-    .textone {
-        top: 35%; /* Adjust position for mobile */
-    }
-
-    .texttwo {
-        top: 50%; /* Adjust position for mobile */
-    }
-
-    .textthree {
-        top: 65%; /* Adjust position for mobile */
-    }
-}
