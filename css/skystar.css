@@ -50,22 +50,22 @@ h1 {
 .texttwo {
     position: absolute;
     left: 50%;
-    top: 35%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateX(-50%, -50%);
 }
 
 .textone {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translateX(-50%);
+    top: 40%;
+    transform: translateX(-50%, -50%);
 }
 
 .textthree {
     position: absolute;
     left: 50%;
-    top: 65%;
-    transform: translateX(-50%);
+    top: 60%;
+    transform: translateX(-50%, -50%);
 }
 
 :root {
