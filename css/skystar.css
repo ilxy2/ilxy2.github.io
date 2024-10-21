@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Zhi+Mang+Xing&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     height: 100vh;
     display: flex;
@@ -14,70 +14,84 @@ body {
     overflow: hidden;
     perspective: 1300px;
 }
+
 #videofilm {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
+    width: 100vw; /* Make video full width */
+    height: 100vh; /* Make video full height */
+    object-fit: cover; /* Cover the entire screen */
+    position: fixed; /* Fixed positioning to fill the background */
     z-index: -1;
-  }
-  h1{
+}
+
+h1 {
     font-size: 36px;
     color: #B1BCE6;
     font-family: 'Courgette';
-  }
+}
+
 .texttwo {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center text */
 }
+
 .textone {
     position: absolute;
     left: 50%;
     top: 40%;
-    transform: translateX(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center text */
 }
+
 .textthree {
     position: absolute;
     left: 50%;
     top: 60%;
-    transform: translateX(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center text */
 }
+
 :root {
     --margin-top: 0;
     --margin-left: 0;
     --animation-duration: 0s;
     --animation-delay: 0s;
 }
+
 div {
     transform-style: preserve-3d;
 }
+
 .word-box,
-.word-box .word{
-position: absolute;
-animation: rotY 0s linear infinite;
-animation-duration: var(--animation-duration);
-animation-delay: var(--animation-delay);
+.word-box .word {
+    position: absolute;
+    animation: rotY 0s linear infinite;
+    animation-duration: var(--animation-duration);
+    animation-delay: var(--animation-delay);
 }
-.word-box{
+
+.word-box {
     margin-top: var(--margin-top);
 }
-.word-box .word{
+
+.word-box .word {
     margin-left: var(--margin-left);
 }
+
 .word-box .word {
     animation-duration: reverse;
 }
+
 @keyframes rotY {
-    to{
+    to {
         transform: rotateY(360deg);
     }
-    
 }
-audio{
-    display: none;
+
+audio {
+    display: none; /* Hide audio element */
 }
+
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
     h1 {
         font-size: 24px; /* Adjust font size for smaller screens */
