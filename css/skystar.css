@@ -71,7 +71,7 @@ h1 {
 :root {
     --margin-top: 0;
     --margin-left: 0;
-    --animation-duration: 5s;
+    --animation-duration: 8s;
     --animation-delay: 0s;
 }
 
@@ -99,9 +99,9 @@ div {
     animation-duration: reverse;
 }
 .word-box .word {
-    font-size: 18px; /* Make the font size smaller */
+    font-size: 15px; /* Make the font size smaller */
     line-height: 1.2; /* Adjust line height for better spacing */
-    animation-duration: 5s; /* Keep the slower spin duration */
+    animation-duration: 8s; /* Keep the slower spin duration */
 }
 
 
