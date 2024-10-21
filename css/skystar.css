@@ -11,15 +11,15 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Prevent scrolling */
     perspective: 1300px;
 }
 
 #videofilm {
-    width: 100vw; /* Make video full width */
-    height: 100vh; /* Make video full height */
-    object-fit: cover; /* Cover the entire screen */
-    position: fixed; /* Fixed positioning to fill the background */
+    width: 100vw; /* Use viewport width */
+    height: 100vh; /* Use viewport height */
+    object-fit: cover; /* Maintain aspect ratio */
+    position: fixed;
     z-index: -1;
 }
 
@@ -33,21 +33,21 @@ h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); /* Center text */
+    transform: translateX(-50%);
 }
 
 .textone {
     position: absolute;
     left: 50%;
     top: 40%;
-    transform: translate(-50%, -50%); /* Center text */
+    transform: translateX(-50%);
 }
 
 .textthree {
     position: absolute;
     left: 50%;
     top: 60%;
-    transform: translate(-50%, -50%); /* Center text */
+    transform: translateX(-50%);
 }
 
 :root {
@@ -88,5 +88,5 @@ div {
 }
 
 audio {
-    display: none; /* Hide audio element */
+    display: none;
 }
