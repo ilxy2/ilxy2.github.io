@@ -41,7 +41,7 @@ body {
     z-index: 1; /* Keep gif above background */
 }
 h1 {
-    font-size: 36px;
+    font-size: 24px;
     color: #B1BCE6;
     font-family: 'Courgette';
 }
@@ -97,6 +97,12 @@ div {
 .word-box .word {
     animation-duration: reverse;
 }
+.word-box .word {
+    font-size: 18px; /* Make the font size smaller */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    animation-duration: 5s; /* Keep the slower spin duration */
+}
+
 
 @keyframes rotY {
     to {
